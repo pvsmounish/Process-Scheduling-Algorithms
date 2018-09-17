@@ -1,4 +1,6 @@
-// SJF pre-emptive
+// Shortest Job First (SJF) Preemtive with Arrival Time
+//Mounish Sai (https://github.com/pvsmounish)
+
 #include<iostream>
 #include<limits>
 using namespace std;

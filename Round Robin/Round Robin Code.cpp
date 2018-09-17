@@ -1,5 +1,6 @@
-// Round Robin with arrival time
-//17BIT0229 P Venkata Sai Mounish
+// Round Robin with Arrival Time
+//Mounish Sai (https://github.com/pvsmounish)
+
 #include<iostream>
 #define SIZE 5
 using namespace std;

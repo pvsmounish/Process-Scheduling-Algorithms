@@ -1,5 +1,6 @@
-// Priority Pre-emptive
-//17BIT0229 P Venkata Sai Mounish
+// Priority Preemptive with Arrival Time
+//Mounish Sai (https://github.com/pvsmounish)
+
 #include<iostream>
 #include<limits>
 using namespace std;
