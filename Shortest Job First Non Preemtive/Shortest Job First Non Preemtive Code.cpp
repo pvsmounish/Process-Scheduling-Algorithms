@@ -1,5 +1,5 @@
 // Shortest Job First (SJF) Non Preemtive with Arrival Time
-//Mounish Sai (https://github.com/pvsmounish)
+// Mounish Sai (https://github.com/pvsmounish)
 
 #include<iostream>
 #include<limits>
@@ -81,7 +81,6 @@ int main(){
     		break;
     	}
 
-		
 		processes[currentShortestJobIndex].responseTime = currentTime;
 
         currentTime += processes[currentShortestJobIndex].burstTime;
@@ -91,12 +90,10 @@ int main(){
     	
     }
 
-
     int sumResponseTime = 0;
     int sumCompletionTime = 0;
     int sumWaitingTime = 0;
     int sumTurnAroundTime = 0;
-  
 
     for(int n=0;n<numOfProcesses;n++){
         cout << "\nProcess " << processes[n].processName << ":\n";
@@ -112,7 +109,6 @@ int main(){
         sumWaitingTime += processes[n].waitingTime;
         sumTurnAroundTime += processes[n].turnAroundTime;
     }
-
 
 	cout << "\n\nAverage Response Time for " << (numOfProcesses) << " Processes: " << (float) sumResponseTime/numOfProcesses;
 	cout << "\n\nAverage Completion Time for " << (numOfProcesses) << " Processes: " << (float) sumCompletionTime/numOfProcesses;

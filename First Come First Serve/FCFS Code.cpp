@@ -1,5 +1,5 @@
 // First Code First Serve (FCFS) with Arrival Time
-//Mounish Sai (https://github.com/pvsmounish)
+// Mounish Sai (https://github.com/pvsmounish)
 
 #include<iostream>
 #include<limits>
@@ -80,7 +80,6 @@ int main(){
         sumWaitingTime += processes[n].waitingTime;
         sumTurnAroundTime += processes[n].turnAroundTime;
 
-        
         cumulativeSum += processes[n].burstTime;
     }
 

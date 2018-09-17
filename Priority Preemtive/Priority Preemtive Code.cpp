@@ -1,5 +1,5 @@
 // Priority Preemptive with Arrival Time
-//Mounish Sai (https://github.com/pvsmounish)
+// Mounish Sai (https://github.com/pvsmounish)
 
 #include<iostream>
 #include<limits>
@@ -89,13 +89,10 @@ int main(){
 
     	processes[currentHighestPriorityIndex].remainingTime--;
         currentTime++;
-    	
 
 		if(processes[currentHighestPriorityIndex].remainingTime == 0){
 			processes[currentHighestPriorityIndex].completionTime = currentTime;
 		}
-
-    	
     }
 
 
@@ -103,7 +100,6 @@ int main(){
     int sumCompletionTime = 0;
     int sumWaitingTime = 0;
     int sumTurnAroundTime = 0;
-  
 
     for(int n=0;n<numOfProcesses;n++){
         cout << "\nProcess " << processes[n].processName << ":\n";
@@ -119,7 +115,6 @@ int main(){
         sumWaitingTime += processes[n].waitingTime;
         sumTurnAroundTime += processes[n].turnAroundTime;
     }
-
 
 	cout << "\n\nAverage Response Time for " << (numOfProcesses) << " Processes: " << (float) sumResponseTime/numOfProcesses;
 	cout << "\n\nAverage Completion Time for " << (numOfProcesses) << " Processes: " << (float) sumCompletionTime/numOfProcesses;
